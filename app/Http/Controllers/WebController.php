@@ -15,4 +15,8 @@ class WebController extends Controller
     {
         return view('web.checkout');
     }
+    public function payment()
+    {
+        return view('web.payment');
+    }
 }
