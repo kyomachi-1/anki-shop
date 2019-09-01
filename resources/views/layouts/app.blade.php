@@ -85,6 +85,10 @@
                 </main>
             </main>
         </div>
+
+        @component('components.footer')
+        @endcomponent
+
     </div>
 </body>
 </html>
