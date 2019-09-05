@@ -19,4 +19,12 @@ class WebController extends Controller
     {
         return view('web.payment');
     }
+    public function set_token(Request $request){
+        $user = Auth::user();
+        $user->token = request('token');
+        $user->save();
+        
+        return response()->json($user);
+        
+    }
 }
