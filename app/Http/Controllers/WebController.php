@@ -26,7 +26,7 @@ class WebController extends Controller
     {
         
         $pay_jp_secret = env('MIX_PAYJP_SECRET_KEY');
-        \Payjp\Payjp::setApikey($pay_jp_secret);
+        \Payjp\Payjp::setApiKey($pay_jp_secret);
         
         $customer = \Payjp\Customer::create(array(
             "card" => request('token')
@@ -42,9 +42,9 @@ class WebController extends Controller
     public function pay(Request $request)
     {
         $pay_jp_secret = env('MIX_PAYJP_SECRET_KEY');
-        \Payjp\Payjp::setApikey($pay_jp_secret);
+        \Payjp\Payjp::setApiKey($pay_jp_secret);
         
-        $user = Aurh::user();
+        $user = Auth::user();
         
         $res = \Payjp\Charge::create(
             [
