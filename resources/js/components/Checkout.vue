@@ -3,7 +3,7 @@
     <payjp-checkout
       :api-key="public_key"
       :client-id="client_id"
-      text="add credit crad"
+      text="カードを登録する"
       submit-text="カードで支払い"
       name-placeholder="JOHN DOE"
       v-on:created="onTokenCreated"

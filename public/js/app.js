@@ -38536,7 +38536,7 @@ var render = function() {
         attrs: {
           "api-key": _vm.public_key,
           "client-id": _vm.client_id,
-          text: "add credit crad",
+          text: "カードを登録する",
           "submit-text": "カードで支払い",
           "name-placeholder": "JOHN DOE"
         },
